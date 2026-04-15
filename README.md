@@ -118,20 +118,44 @@ Ready-to-use toolkit in `toolkit/EMERGENCY.md`:
 - Rapid cool-down techniques / 快速降温技巧
 - Self-talk scripts / 自我对话脚本
 
+> 📖 Want to learn more about the design decisions? / 想了解设计理念？ [Design Philosophy / 设计哲学](docs/design.md)
+
 ---
 
 <a id="installation"></a>
 ## Installation / 安装
 
-### 方式一：npx skills（推荐）
+### 方式一：npx skills（推荐，跨平台 / Recommended, Cross-platform）
 
 ```bash
 npx skills add taohaowei/soul-guardian -g
 ```
 
-自动将技能安装到全局 `~/.claude/skills/` 目录，开箱即用。Installs the skill globally to `~/.claude/skills/`.
+自动将技能安装到全局 `~/.claude/skills/` 目录，兼容 Claude Code、Copilot CLI、Codex CLI、Gemini CLI。
 
-### 方式二：Claude Code Plugin
+Installs the skill globally to `~/.claude/skills/`, compatible with Claude Code, Copilot CLI, Codex CLI, and Gemini CLI.
+
+安装后开始 / Get started:
+
+```
+/counselor 你好
+```
+
+### 方式二：ClaWHub（OpenClaw 生态 / OpenClaw Ecosystem）
+
+```bash
+npx clawhub install soul-guardian-counselor
+```
+
+安装到 OpenClaw 的 skills 目录。Installs to OpenClaw's skills directory.
+
+安装后开始 / Get started:
+
+```
+/soul-guardian-counselor 你好
+```
+
+### 方式三：Claude Code Plugin
 
 在 Claude Code 中执行 / Run inside Claude Code:
 
@@ -141,7 +165,13 @@ npx skills add taohaowei/soul-guardian -g
 /reload-plugins
 ```
 
-### 方式三：手动克隆 / Manual Clone
+安装后开始 / Get started:
+
+```
+/soul-guardian:counselor 你好
+```
+
+### 方式四：手动克隆 / Manual Clone
 
 ```bash
 git clone https://github.com/taohaowei/soul-guardian.git
@@ -149,36 +179,46 @@ mkdir -p ~/.claude/skills
 ln -s "$(pwd)/soul-guardian/skills/counselor" ~/.claude/skills/counselor
 ```
 
-### 方式四：ClaHub（需先发布）
+安装后开始 / Get started:
 
-```bash
-npx clawhub install soul-guardian-counselor
 ```
-
-> **注意**：ClaHub 上 `soul-guardian` slug 已被占用，我们将以 `soul-guardian-counselor` 发布。
-> ClaHub 安装路径为 `~/clawd/skills/`，需确保你的 Agent 扫描该路径。
-
-### 方式五：claude-plugins.dev
-
-```bash
-npx claude-plugins skills install taohaowei/soul-guardian/counselor
+/counselor 你好
 ```
-
-> **注意**：claude-plugins.dev 自动索引 GitHub 仓库，可能需要等待同步。
-> 如果未找到，请使用方式一或方式二。
 
 ---
 
 <a id="quick-start"></a>
 ## Quick Start / 快速开始
 
-安装完成后，在 Claude Code 中开始你的第一次咨询 / After installation, start your first session in Claude Code:
+安装完成后，开始你的第一次咨询。调用方式取决于安装方式：
+
+After installation, start your first session. The command depends on how you installed it:
+
+### 各平台调用语法 / Commands by Platform
+
+**通过 npx skills 或手动克隆安装（全局技能）：**
+
+```
+/counselor 你好
+/counselor 最近心情不太好
+/counselor 今天跟婆婆又吵架了
+```
+
+**通过 Claude Code Plugin 安装：**
+
+```
+/soul-guardian:counselor 你好
+/soul-guardian:counselor 最近心情不太好
+/soul-guardian:counselor 今天跟婆婆又吵架了
+```
+
+**通过 ClaWHub 安装（OpenClaw）：**
+
+```
+/soul-guardian-counselor 你好
+```
 
 ### 第一次对话 / First Session
-
-```
-> /counselor
-```
 
 Soul Guardian 会自动创建 `~/.counselor/` 目录、初始化所有模板文件，然后温暖地跟你打招呼。
 
