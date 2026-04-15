@@ -123,29 +123,37 @@ Ready-to-use toolkit in `toolkit/EMERGENCY.md`:
 <a id="installation"></a>
 ## Installation / 安装
 
-### Option 1: One-line install (OpenClaw / skills.sh)
+### 推荐：一行命令安装
 
 ```bash
-npx skills add taohaowei/soul-guardian --skill counselor
+npx skills add taohaowei/soul-guardian -g
 ```
 
-### Option 2: Manual clone / 手动克隆
+自动将技能安装到全局 `~/.claude/skills/` 目录，开箱即用。
 
-```bash
-git clone https://github.com/taohaowei/soul-guardian.git ~/.claude/skills/counselor
-```
+### 方式二：Claude Code 插件市场
 
-### Option 3: Claude Code Plugin
-
-If this skill is available in a marketplace you've added:
+先添加市场源，再安装：
 
 ```
+/plugin marketplace add taohaowei/soul-guardian
 /plugin install soul-guardian
 ```
 
-> After installation, start your first session by typing `/counselor` in Claude Code.
->
+### 方式三：手动克隆
+
+```bash
+# 克隆仓库
+git clone https://github.com/taohaowei/soul-guardian.git
+
+# 创建符号链接到 Claude Code 技能目录
+mkdir -p ~/.claude/skills
+ln -s "$(pwd)/soul-guardian/skills/counselor" ~/.claude/skills/counselor
+```
+
 > 安装后，在 Claude Code 中输入 `/counselor` 即可开始第一次咨询。
+>
+> After installation, type `/counselor` in Claude Code to start your first session.
 
 ---
 
