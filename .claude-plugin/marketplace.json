@@ -1,0 +1,21 @@
+{
+  "name": "soul-guardian",
+  "owner": {
+    "name": "taohaowei"
+  },
+  "metadata": {
+    "description": "A persistent AI counselor — it remembers you, speaks Chinese, and keeps everything local.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "soul-guardian",
+      "description": "Persistent AI counselor with Chinese family system therapy. 持久记忆 AI 心理咨询师，专为中国家庭场景设计。",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/counselor"
+      ]
+    }
+  ]
+}
