@@ -10,9 +10,12 @@
   "plugins": [
     {
       "name": "soul-guardian",
-      "description": "Persistent AI counselor with Chinese family system therapy. 持久记忆 AI 心理咨询师，专为中国家庭场景设计。",
+      "description": "Persistent AI counselor with memory system. 持久记忆 AI 心理咨询师。",
       "source": "./",
-      "strict": true
+      "strict": false,
+      "skills": [
+        "./skills/counselor"
+      ]
     }
   ]
 }
