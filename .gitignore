@@ -5,3 +5,6 @@
 .idea/
 .vscode/
 node_modules/
+
+# 推广素材保留本地
+docs/promotional/
