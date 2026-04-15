@@ -123,54 +123,86 @@ Ready-to-use toolkit in `toolkit/EMERGENCY.md`:
 <a id="installation"></a>
 ## Installation / 安装
 
-### 推荐：一行命令安装
+### 方式一：npx skills（推荐）
 
 ```bash
 npx skills add taohaowei/soul-guardian -g
 ```
 
-自动将技能安装到全局 `~/.claude/skills/` 目录，开箱即用。
+自动将技能安装到全局 `~/.claude/skills/` 目录，开箱即用。Installs the skill globally to `~/.claude/skills/`.
 
-### 方式二：Claude Code 插件市场
+### 方式二：Claude Code Plugin
 
-先添加市场源，再安装：
+在 Claude Code 中执行 / Run inside Claude Code:
 
 ```
 /plugin marketplace add taohaowei/soul-guardian
 /plugin install soul-guardian
+/reload-plugins
 ```
 
-### 方式三：手动克隆
+### 方式三：手动克隆 / Manual Clone
 
 ```bash
-# 克隆仓库
 git clone https://github.com/taohaowei/soul-guardian.git
-
-# 创建符号链接到 Claude Code 技能目录
 mkdir -p ~/.claude/skills
 ln -s "$(pwd)/soul-guardian/skills/counselor" ~/.claude/skills/counselor
 ```
 
-> 安装后，在 Claude Code 中输入 `/counselor` 即可开始第一次咨询。
->
-> After installation, type `/counselor` in Claude Code to start your first session.
+### 方式四：ClaHub（需先发布）
+
+```bash
+npx clawhub install soul-guardian-counselor
+```
+
+> **注意**：ClaHub 上 `soul-guardian` slug 已被占用，我们将以 `soul-guardian-counselor` 发布。
+> ClaHub 安装路径为 `~/clawd/skills/`，需确保你的 Agent 扫描该路径。
+
+### 方式五：claude-plugins.dev
+
+```bash
+npx claude-plugins skills install taohaowei/soul-guardian/counselor
+```
+
+> **注意**：claude-plugins.dev 自动索引 GitHub 仓库，可能需要等待同步。
+> 如果未找到，请使用方式一或方式二。
 
 ---
 
 <a id="quick-start"></a>
 ## Quick Start / 快速开始
 
-### First Session / 第一次对话
+安装完成后，在 Claude Code 中开始你的第一次咨询 / After installation, start your first session in Claude Code:
+
+### 第一次对话 / First Session
 
 ```
 > /counselor
 ```
 
+Soul Guardian 会自动创建 `~/.counselor/` 目录、初始化所有模板文件，然后温暖地跟你打招呼。
+
 Soul Guardian will create `~/.counselor/`, initialize templates, and greet you warmly.
 
-心灵守望者会创建 `~/.counselor/` 目录、初始化模板，然后温暖地跟你打招呼。
+### 直接说你想聊的 / Start with a topic
 
-### Subsequent Sessions / 后续对话
+```
+> /counselor 最近心情不太好
+> /counselor 今天跟婆婆又吵架了
+> /counselor I've been feeling really anxious about work lately
+> /counselor 最近总是对孩子发火，事后又很内疚
+```
+
+你也可以不用 `/counselor` 触发——直接描述你的感受，如果已安装技能，Claude 会自动识别并加载：
+
+You can also just describe how you feel — if the skill is installed, Claude will auto-detect and load it:
+
+```
+> 今天好烦，不想上班
+> 跟家人吵架了，心里很难受
+```
+
+### 后续对话 / Subsequent Sessions
 
 ```
 > /counselor
@@ -179,14 +211,6 @@ Soul Guardian will create `~/.counselor/`, initialize templates, and greet you w
 It loads your profile, picks up where you left off, and updates your files after the session.
 
 它会加载你的档案、接续上次对话，并在结束后更新你的档案文件。
-
-### Talk about what's on your mind / 直接说你想聊的
-
-```
-> /counselor 今天跟婆婆又吵架了
-> /counselor I've been feeling really anxious about work lately
-> /counselor 最近总是对孩子发火，事后又很内疚
-```
 
 ---
 
