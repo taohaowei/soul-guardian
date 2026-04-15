@@ -82,18 +82,18 @@ No intake forms. No questionnaires. Soul Guardian builds your profile through na
 | 3 | Life satisfaction + strengths / 生活满意度与优势 | `COMPASS.md`, `STRENGTHS.md` |
 | 4+ | Your specific concerns / 深入你关注的议题 | Topic-dependent / 按话题而定 |
 
-### 🏠 Chinese Family System Therapy / 中国家庭系统治疗
+### 🏠 Family Systems Therapy / 家庭系统治疗
 
-The only AI counseling tool built natively for Chinese family dynamics:
+Deep family relationship analysis with structured tools:
 
-唯一为中国家庭场景原生设计的 AI 咨询工具：
+深度家庭关系分析，提供结构化工具：
 
 - **Family genogram** — Three-generation relationship mapping / 三代家谱图关系梳理
 - **Triangle analysis** — Identifying third-party triangulation patterns / 三角关系识别
-- **Unspoken family rules** — Surfacing invisible rules like "family shame stays home" / 发现"不成文规定"
+- **Unspoken family rules** — Surfacing invisible family rules / 发现"不成文规定"
 - **Intergenerational transmission** — Tracing patterns passed down through generations / 代际传递模式追踪
 - **Conflict scripts** — Mapping recurring conflict cycles / 反复上演的冲突剧本
-- **In-law relations, parenting anxiety, eldercare pressure** / 婆媳关系、鸡娃焦虑、养老压力
+- **In-law relations, parenting anxiety, eldercare pressure** / 亲属关系、育儿焦虑、养老压力
 
 ### 🔀 Multi-Modal Therapeutic Approach / 多流派融合
 
@@ -105,9 +105,9 @@ The only AI counseling tool built natively for Chinese family dynamics:
 
 ### 🛡️ Crisis Safety Protocol / 危机安全协议
 
-Built-in risk detection with Chinese crisis hotline numbers, automatic safety file updates, and clear AI limitation statements.
+Built-in risk detection with crisis hotline numbers, automatic safety file updates, and clear AI limitation statements.
 
-内置风险识别，包含中国危机热线号码、自动更新安全档案、明确声明 AI 局限性。
+内置风险识别，包含危机热线号码、自动更新安全档案、明确声明 AI 局限性。
 
 ### 🆘 Emotional First Aid Kit / 情绪急救包
 
