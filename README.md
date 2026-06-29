@@ -97,11 +97,32 @@ Deep family relationship analysis with structured tools:
 
 ### 🔀 Multi-Modal Therapeutic Approach / 多流派融合
 
-- **Person-Centered (Rogers)** — Unconditional positive regard, no judgment / 来访者中心：无条件积极关注
-- **Narrative Therapy** — You are not the problem; the problem is the problem / 叙事疗法：你不是问题，问题才是问题
-- **CBT** — Practical thinking and behavioral tools / 认知行为：实用的思维和行为工具
-- **Family Systems** — Personal issues often root in family relationships / 家庭系统：个人问题往往根植于家庭关系
-- **Positive Psychology** — Focus on strengths, not just problems / 积极心理学：关注优势，不只盯着问题
+Soul Guardian draws on established, mainstream approaches across psychology's **"three forces"** — adapted for the safe boundaries of short-form AI companionship. Not a random mix, but a coherent map.
+
+心灵守望者融合了心理学**"三大势力"**中成熟、主流的取向，并针对 AI 短程陪伴的安全边界做了取舍——不是随意拼凑，而是一张完整的地图。
+
+**① Psychoanalytic — looking back / 精神分析势力 · 向后看（理解根源）**
+- **Psychodynamic lens, gentle / 温和精神动力学视角** — Understand where an emotion comes from and how early experiences shaped today's patterns — without deep unconscious excavation. / 理解情绪的来处、看见早年经历如何塑造当下的模式，但不做深度潜意识挖掘。
+  - 📖 《蛤蟆先生去看心理医生》 · 《被讨厌的勇气》（Adler / 阿德勒——同源，却主张"向前看"）
+
+**② Behavioral-Cognitive — looking forward / 行为认知势力 · 向前看（改变可改变的）**
+- **CBT / 认知行为** — Practical thinking & behavioral tools, Socratic questioning. / 实用的思维和行为工具，苏格拉底式提问。
+  - 📖 《伯恩斯新情绪疗法》（David Burns, *Feeling Good*）
+
+**③ Humanistic — trusting you / 人本主义势力 · 托住你（相信自愈力）**
+- **Person-Centered (Rogers) / 来访者中心** — Unconditional positive regard, no judgment. / 无条件积极关注，不评判。
+  - 📖 罗杰斯《论人的成长》（Carl Rogers, *On Becoming a Person*）
+- **Positive Psychology / 积极心理学** — Focus on strengths, not just problems. / 关注优势，不只盯着问题。
+  - 📖 塞利格曼《真实的幸福》（Martin Seligman, *Authentic Happiness*）
+
+**Integrative / 整合取向**
+- **Narrative Therapy / 叙事疗法** — You are not the problem; the problem is the problem. / 你不是问题，问题才是问题。
+  - 📖 麦克·怀特《叙事疗法实践地图》（Michael White, *Maps of Narrative Practice*）
+- **Family Systems / 家庭系统** — Personal issues often root in family relationships. / 个人问题往往根植于家庭关系。
+  - 📖 《热锅上的家庭》（*The Family Crucible*）
+
+> ⚠️ The psychodynamic work here stays gentle **by design** — it helps you *understand* roots, not pry open trauma that needs long-term, in-person care.
+> ⚠️ 这里的精神动力学是"温和版"——**只帮你理解根源，不会去撬开需要长程、面对面专业照护的创伤。**
 
 ### 🛡️ Crisis Safety Protocol / 危机安全协议
 
