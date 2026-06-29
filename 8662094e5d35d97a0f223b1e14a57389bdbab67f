@@ -1,0 +1,82 @@
+.claude-plugin/marketplace.json
+  5b3b05337e362751 8,17
+.github/skills/soul-guardian/SKILL.md
+  5b3b05337e362751 1
+.agents/skills/soul-guardian/SKILL.md
+  5b3b05337e362751 1
+.gemini/skills/soul-guardian/SKILL.md
+  5b3b05337e362751 1
+SKILL.md
+  5b3b05337e362751 2-4,54,58,62-64,86,124,182
+docs/design.md
+  5b3b05337e362751 20
+README.md
+  5b3b05337e362751 53,162,168,176,192,200,206,223-225,231-233,239,244,246,251-254,257,269,284,293,317,320
+openclaw-skill/soul-guardian/SKILL.md
+  5b3b05337e362751 1
+references/templates.md
+  5b3b05337e362751 3,10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8-ntes.8",
+  "base_commit_sha": "8662094e5d35d97a0f223b1e14a57389bdbab67f",
+  "prompts": {
+    "5b3b05337e362751": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "dec5dbec-5e81-4c4d-a73d-c1b729644533",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "taohaowei",
+      "messages": [],
+      "total_additions": 778,
+      "total_deletions": 42,
+      "accepted_lines": 778,
+      "overriden_lines": 0,
+      "per_file_stats": {
+        "references/templates.md": {
+          "additions": 2,
+          "deletions": 2,
+          "accepted_lines": 2
+        },
+        "README.md": {
+          "additions": 26,
+          "deletions": 26,
+          "accepted_lines": 26
+        },
+        "SKILL.md": {
+          "additions": 11,
+          "deletions": 11,
+          "accepted_lines": 11
+        },
+        "openclaw-skill/soul-guardian/SKILL.md": {
+          "additions": 184,
+          "accepted_lines": 184
+        },
+        ".github/skills/soul-guardian/SKILL.md": {
+          "additions": 184,
+          "accepted_lines": 184
+        },
+        "docs/design.md": {
+          "additions": 1,
+          "deletions": 1,
+          "accepted_lines": 1
+        },
+        ".agents/skills/soul-guardian/SKILL.md": {
+          "additions": 184,
+          "accepted_lines": 184
+        },
+        ".claude-plugin/marketplace.json": {
+          "additions": 2,
+          "deletions": 2,
+          "accepted_lines": 2
+        },
+        ".gemini/skills/soul-guardian/SKILL.md": {
+          "additions": 184,
+          "accepted_lines": 184
+        }
+      }
+    }
+  }
+}
