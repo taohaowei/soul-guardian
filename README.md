@@ -50,7 +50,7 @@ Your counselor never forgets. A comprehensive file-based profile system stores y
 你的咨询师从不忘记。完整的本地档案系统在每次对话开始时自动加载。
 
 ```
-~/.counselor/
+~/.soul-guardian/
 ├── core/           # 核心档案
 │   ├── PROFILE.md  # 全人画像：你是谁、关注什么、有什么优势
 │   ├── STATE.md    # 当前状态：最近的情绪、上次对话要点、下次方向
@@ -159,13 +159,13 @@ Installs the skill globally to `~/.claude/skills/`, compatible with Claude Code,
 安装后开始 / Get started:
 
 ```
-/counselor 你好
+/soul-guardian 你好
 ```
 
 ### 方式二：ClaWHub（OpenClaw 生态 / OpenClaw Ecosystem）
 
 ```bash
-npx clawhub install soul-guardian-counselor
+npx clawhub install soul-guardian
 ```
 
 安装到 OpenClaw 的 skills 目录。Installs to OpenClaw's skills directory.
@@ -173,7 +173,7 @@ npx clawhub install soul-guardian-counselor
 安装后开始 / Get started:
 
 ```
-/soul-guardian-counselor 你好
+/soul-guardian 你好
 ```
 
 ### 方式三：Claude Code Plugin
@@ -189,7 +189,7 @@ npx clawhub install soul-guardian-counselor
 安装后开始 / Get started:
 
 ```
-/soul-guardian:counselor 你好
+/soul-guardian:soul-guardian 你好
 ```
 
 ### 方式四：手动克隆 / Manual Clone
@@ -197,13 +197,13 @@ npx clawhub install soul-guardian-counselor
 ```bash
 git clone https://github.com/taohaowei/soul-guardian.git
 mkdir -p ~/.claude/skills
-ln -s "$(pwd)/soul-guardian/skills/counselor" ~/.claude/skills/counselor
+ln -s "$(pwd)/soul-guardian/skills/soul-guardian" ~/.claude/skills/soul-guardian
 ```
 
 安装后开始 / Get started:
 
 ```
-/counselor 你好
+/soul-guardian 你好
 ```
 
 ---
@@ -220,41 +220,41 @@ After installation, start your first session. The command depends on how you ins
 **通过 npx skills 或手动克隆安装（全局技能）：**
 
 ```
-/counselor 你好
-/counselor 最近心情不太好
-/counselor 今天跟婆婆又吵架了
+/soul-guardian 你好
+/soul-guardian 最近心情不太好
+/soul-guardian 今天跟婆婆又吵架了
 ```
 
 **通过 Claude Code Plugin 安装：**
 
 ```
-/soul-guardian:counselor 你好
-/soul-guardian:counselor 最近心情不太好
-/soul-guardian:counselor 今天跟婆婆又吵架了
+/soul-guardian:soul-guardian 你好
+/soul-guardian:soul-guardian 最近心情不太好
+/soul-guardian:soul-guardian 今天跟婆婆又吵架了
 ```
 
 **通过 ClaWHub 安装（OpenClaw）：**
 
 ```
-/soul-guardian-counselor 你好
+/soul-guardian 你好
 ```
 
 ### 第一次对话 / First Session
 
-Soul Guardian 会自动创建 `~/.counselor/` 目录、初始化所有模板文件，然后温暖地跟你打招呼。
+Soul Guardian 会自动创建 `~/.soul-guardian/` 目录、初始化所有模板文件，然后温暖地跟你打招呼。
 
-Soul Guardian will create `~/.counselor/`, initialize templates, and greet you warmly.
+Soul Guardian will create `~/.soul-guardian/`, initialize templates, and greet you warmly.
 
 ### 直接说你想聊的 / Start with a topic
 
 ```
-> /counselor 最近心情不太好
-> /counselor 今天跟婆婆又吵架了
-> /counselor I've been feeling really anxious about work lately
-> /counselor 最近总是对孩子发火，事后又很内疚
+> /soul-guardian 最近心情不太好
+> /soul-guardian 今天跟婆婆又吵架了
+> /soul-guardian I've been feeling really anxious about work lately
+> /soul-guardian 最近总是对孩子发火，事后又很内疚
 ```
 
-你也可以不用 `/counselor` 触发——直接描述你的感受，如果已安装技能，Claude 会自动识别并加载：
+你也可以不用 `/soul-guardian` 触发——直接描述你的感受，如果已安装技能，Claude 会自动识别并加载：
 
 You can also just describe how you feel — if the skill is installed, Claude will auto-detect and load it:
 
@@ -266,7 +266,7 @@ You can also just describe how you feel — if the skill is installed, Claude wi
 ### 后续对话 / Subsequent Sessions
 
 ```
-> /counselor
+> /soul-guardian
 ```
 
 It loads your profile, picks up where you left off, and updates your files after the session.
@@ -281,7 +281,7 @@ It loads your profile, picks up where you left off, and updates your files after
 ┌─────────────┐     ┌───────────────────────────────────────────────┐
 │  You / 你    │────▶│            Soul Guardian / 心灵守望者           │
 │             │     │                                               │
-│  /counselor │     │  1. Load profile / 加载档案                     │
+│  /soul-guardian │     │  1. Load profile / 加载档案                     │
 │             │     │  2. Check safety / 检查安全状态                  │
 │             │     │  3. Resume context / 接续上次话题                │
 │             │     │  4. Natural conversation / 自然对话              │
@@ -290,7 +290,7 @@ It loads your profile, picks up where you left off, and updates your files after
 └─────────────┘     └───────────────────────────────────────────────┘
                                         │
                                         ▼
-                              ~/.counselor/ (local only)
+                              ~/.soul-guardian/ (local only)
 ```
 
 ### Topic Routing / 话题路由
@@ -314,10 +314,10 @@ It loads your profile, picks up where you left off, and updates your files after
 
 **你的数据永远不会离开你的电脑。**
 
-- All files stored in `~/.counselor/` on your local filesystem / 所有文件存储在本地
+- All files stored in `~/.soul-guardian/` on your local filesystem / 所有文件存储在本地
 - No cloud storage, no remote servers, no telemetry / 没有云存储、没有远程服务器、没有遥测
 - No real names recorded — only nicknames / 不记录真实姓名——只用昵称
-- You own your data — delete `~/.counselor/` anytime to erase everything / 随时删除即可清除所有内容
+- You own your data — delete `~/.soul-guardian/` anytime to erase everything / 随时删除即可清除所有内容
 
 ---
 

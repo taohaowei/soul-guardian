@@ -17,7 +17,7 @@ The core design philosophy of Soul Guardian is to **make AI work like a real the
 在真实的心理咨询实践中，咨询师会维护一套完整的个案文档——个案概念化（Case Formulation）、会话记录（Session Notes）、治疗计划（Treatment Plan）、风险评估（Risk Assessment）。Soul Guardian 将这些临床实践翻译为一套本地文件结构：
 
 ```
-~/.counselor/
+~/.soul-guardian/
 ├── core/           # 核心身份，始终加载
 ├── maps/           # 认知地图，按需加载
 ├── sessions/       # 历史会话，只写不改
