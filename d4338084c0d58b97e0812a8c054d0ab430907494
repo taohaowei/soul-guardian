@@ -1,0 +1,37 @@
+SKILL.md
+  5b3b05337e362751 13-21,23-25
+README.md
+  5b3b05337e362751 100-125
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8-ntes.8",
+  "base_commit_sha": "d4338084c0d58b97e0812a8c054d0ab430907494",
+  "prompts": {
+    "5b3b05337e362751": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "dec5dbec-5e81-4c4d-a73d-c1b729644533",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "taohaowei",
+      "messages": [],
+      "total_additions": 38,
+      "total_deletions": 8,
+      "accepted_lines": 38,
+      "overriden_lines": 0,
+      "per_file_stats": {
+        "SKILL.md": {
+          "additions": 12,
+          "deletions": 3,
+          "accepted_lines": 12
+        },
+        "README.md": {
+          "additions": 26,
+          "deletions": 5,
+          "accepted_lines": 26
+        }
+      }
+    }
+  }
+}
